@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  chromesthesia:
+    build: .
+    container_name: chromesthesia-trainer
+    ports:
+      - "8080:80"
+    restart: unless-stopped
